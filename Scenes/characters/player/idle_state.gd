@@ -25,7 +25,9 @@ func _on_next_transitions() -> void:
 	
 	if GameInputEvents.is_movement_input():
 		transition.emit("Walk")
-
+	
+	if player.current_tool == DataTypes.Tools.ForkEnemy:
+		transition.emit("Fork")
 
 func _on_enter() -> void:
 	pass

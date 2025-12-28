@@ -17,6 +17,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 ToolManager="*res://Scripts/Globals/tool_manager.gd"
+CameraTransition="*res://Scenes/UI/camera_transition.tscn"
 
 [display]
 

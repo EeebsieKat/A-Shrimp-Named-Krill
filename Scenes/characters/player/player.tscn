@@ -680,6 +680,8 @@ radius = 5.0
 radius = 3.1622777
 
 [node name="Player" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 16
 script = ExtResource("1_a6wmr")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

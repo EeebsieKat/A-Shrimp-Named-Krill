@@ -18,6 +18,7 @@ func _on_physics_process(_delta : float) -> void:
 		animated_sprite_2d.play("Idle_Left")
 	else:
 		animated_sprite_2d.play("Idle_Front")
+	player.position = player.position.round()
 
 
 func _on_next_transitions() -> void:

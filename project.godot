@@ -79,6 +79,7 @@ eat_food={
 2d_physics/layer_4="Tool"
 2d_physics/layer_5="Object"
 2d_physics/layer_6="Collectable"
+2d_physics/layer_7="Transitions"
 
 [rendering]
 

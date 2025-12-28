@@ -26,8 +26,14 @@ func _on_next_transitions() -> void:
 	if GameInputEvents.is_movement_input():
 		transition.emit("Walk")
 	
-	if player.current_tool == DataTypes.Tools.ForkEnemy:
+	if player.current_tool == DataTypes.Tools.ForkEnemy && GameInputEvents.use_tool():
 		transition.emit("Fork")
+		
+	if player.current_tool == DataTypes.Tools.TillGround && GameInputEvents.use_tool():
+		transition.emit("Tilling")
+		
+	if player.current_tool == DataTypes.Tools.WaterCrops && GameInputEvents.use_tool():
+		transition.emit("Watering")
 
 func _on_enter() -> void:
 	pass

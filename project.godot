@@ -14,6 +14,10 @@ config/name="Chill and Krill"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+ToolManager="*res://Scripts/Globals/tool_manager.gd"
+
 [display]
 
 window/size/viewport_width=640
